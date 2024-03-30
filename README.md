@@ -26,9 +26,9 @@ npm install
 Luego, configura las variables de entorno duplicando el archivo `.env.example` para cada entorno:
 
 ```
-cp .env.example .env.development
-cp .env.example .env.test
-cp .env.example .env.production
+cp .env.development
+cp .env.test
+cp .env.production
 ```
 
 Asegúrate de configurar las variables de entorno en cada archivo `.env` según las necesidades de tu entorno.
@@ -40,19 +40,22 @@ Utiliza los siguientes comandos para iniciar la aplicación en el entorno desead
 #### Desarrollo
 
 ```
-NODE_ENV=development npm run dev
+NODE_ENV=development
+npm run dev
 ```
 
 #### Pruebas
 
 ```
-NODE_ENV=test npm run test
+NODE_ENV=test
+npm run test
 ```
 
 #### Producción
 
 ```
-NODE_ENV=production npm run start
+NODE_ENV=production
+npm run start
 ```
 
 ## Ejecutando las pruebas
@@ -80,7 +83,7 @@ También puedes querer listar a otros colaboradores que hayan contribuido a este
 
 ## Licencia
 
-Este proyecto está licenciado bajo la Licencia XYZ - ver el archivo [LICENSE.md](LICENSE.md) para detalles.
+Este proyecto está licenciado bajo la Licencia XYZ - ver el archivo [LICENSE](LICENSE) para detalles.
 
 ## Reconocimientos
 
