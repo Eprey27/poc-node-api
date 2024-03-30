@@ -9,12 +9,12 @@ app.use(express.json());
 
 // Middleware para registrar información de la solicitud y el tiempo de ejecución
 app.use((req, res, next) => {
-  console.time(`Request-${req.method}-${req.url}`);
-  console.log(`Received ${req.method} request for ${req.url}`);
-  res.on('finish', () => {
-    console.timeEnd(`Request-${req.method}-${req.url}`);
-  });
-  next();
+    console.time(`Request-${req.method}-${req.url}`);
+    console.log(`Received ${req.method} request for ${req.url}`);
+    res.on('finish', () => {
+        console.timeEnd(`Request-${req.method}-${req.url}`);
+    });
+    next();
 });
 
 // Swagger
@@ -31,7 +31,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
  *         description: Devuelve un saludo de bienvenida.
  */
 app.get('/', (req, res) => {
-  res.send('¡Hola Mundo!');
+    res.send('¡Hola Mundo!');
 });
 
 /**
@@ -55,9 +55,9 @@ app.get('/', (req, res) => {
  *                     type: integer
  */
 app.get('/data', (req, res) => {
-  setTimeout(() => {
-    res.send({ message: 'Datos obtenidos después de un retraso', data: [1, 2, 3] });
-  }, 2000); // Simula un retraso de 2 segundos
+    setTimeout(() => {
+        res.send({message: 'Datos obtenidos después de un retraso', data: [1, 2, 3]});
+    }, 2000); // Simula un retraso de 2 segundos
 });
 
 /**
@@ -91,11 +91,12 @@ app.get('/data', (req, res) => {
  *                   type: string
  */
 app.post('/calculate', (req, res) => {
-  const { a, b } = req.body;
-  const sum = a + b;
-  res.send({ message: `La suma de ${a} y ${b} es ${sum}` });
+    const {a, b} = req.body;
+    const sum = a + b;
+    res.send({message: `La suma de ${a} y ${b} es ${sum}`});
 });
 
 app.listen(port, () => {
-  console.log(`La aplicación está escuchando en http://localhost:${port}`);
+    console.log(`La aplicación está escuchando en http://localhost:${port}`);
 });
+
