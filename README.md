@@ -1,29 +1,30 @@
-# Nombre del Proyecto
 
-Breve descripción del proyecto, su funcionalidad principal y el problema que resuelve.
+# PoC node.js API backend
 
-## Comenzando
+Brief description of the project, its main functionality, and the problem it solves.
 
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para fines de desarrollo y pruebas.
+## Getting Started
 
-### Pre-requisitos
+These instructions will allow you to get a working copy of the project on your local machine for development and testing purposes.
 
-Antes de comenzar, asegúrate de tener Git instalado para clonar el repositorio:
+### Prerequisites
+
+Before you start, make sure you have Git installed to clone the repository:
 
 ```
 git clone https://github.com/Eprey27/poc-node-api
 cd poc-node-api
 ```
 
-### Instalación
+### Installation
 
-Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
+To install the project dependencies, run the following command:
 
 ```
 npm install
 ```
 
-Luego, configura las variables de entorno duplicando el archivo `.env.example` para cada entorno:
+Then, set up the environment variables by duplicating the `.env.example` file for each environment:
 
 ```
 cp .env.development
@@ -31,62 +32,62 @@ cp .env.test
 cp .env.production
 ```
 
-Asegúrate de configurar las variables de entorno en cada archivo `.env` según las necesidades de tu entorno.
+Make sure to configure the environment variables in each `.env` file according to the needs of your environment.
 
-### Ejecución
+### Execution
 
-Utiliza los siguientes comandos para iniciar la aplicación en el entorno deseado:
+Use the following commands to start the application in the desired environment:
 
-#### Desarrollo
+#### Development
 
 ```
 NODE_ENV=development
 npm run dev
 ```
 
-#### Pruebas
+#### Testing
 
 ```
 NODE_ENV=test
 npm run test
 ```
 
-#### Producción
+#### Production
 
 ```
 NODE_ENV=production
 npm run start
 ```
 
-## Ejecutando las pruebas
+## Running the tests
 
-Para ejecutar las pruebas automatizadas para este sistema, utiliza el siguiente comando:
+To run the automated tests for this system, use the following command:
 
 ```
 npm test
 ```
 
-## Despliegue
+## Deployment
 
-Agrega notas adicionales sobre cómo desplegar esto en un sistema en vivo.
+Add additional notes on how to deploy this on a live system.
 
-## Construido con
+## Built With
 
-* [Node.js](https://nodejs.org/) - Entorno de ejecución para JavaScript.
-* [Express](https://expressjs.com/) - Infraestructura web rápida, minimalista y flexible para Node.js.
+* [Node.js](https://nodejs.org/) - JavaScript runtime environment.
+* [Express](https://expressjs.com/) - Fast, minimalist, and flexible web framework for Node.js.
 
-## Autores
+## Authors
 
 * **Emilio Pérez** - *poc-node-api* - [Eprey27](https://github.com/Eprey27)
 
-También puedes querer listar a otros colaboradores que hayan contribuido a este proyecto.
+You may also want to list other contributors who have contributed to this project.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia XYZ - ver el archivo [LICENSE](LICENSE) para detalles.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Reconocimientos
+## Acknowledgments
 
-* Agradecimientos a cualquier persona cuyo código fue utilizado.
-* Inspiración.
+* Thanks to anyone whose code was used.
+* Inspiration.
 * etc.
