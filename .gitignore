@@ -19,4 +19,7 @@ pnpm-debug.log*
 .vscode/
 
 # Directorios específicos del entorno
-.env/
+.env*
+.env.development
+.env.production
+.env.test
