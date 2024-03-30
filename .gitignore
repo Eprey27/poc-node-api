@@ -17,3 +17,6 @@ pnpm-debug.log*
 # Directorios específicos de la IDE o editor
 .idea/
 .vscode/
+
+# Directorios específicos del entorno
+.env/
