@@ -20,7 +20,7 @@ const options = {
             },
         ],
     },
-    apis: ['./app.js'], // Asegúrate de que esta ruta apunte a tus archivos de ruta
+    apis: ['./routes/*.js'], // Esto incluirá todos los archivos JS en el directorio de rutas
 };
 
 const specs = swaggerJsdoc(options);
